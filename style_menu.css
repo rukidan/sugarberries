@@ -1,0 +1,1429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+body{
+    background-color: #fff;
+    animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+            
+    
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+ 
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+     width: 100%;
+     height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/*/-------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------/*/
+nav{
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1;
+
+}
+nav .logo{
+    width: 50px;
+    margin-top: 5px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #f198a5;
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f198a5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* --------------------------------------------------------OPENING PAGE------------------------------------------------------------------- */
+.welcome h1 {
+    font-family: 'Shrikhand';
+    font-size: 115px;
+    color: #5b1409;
+    margin-top: 300px;
+    text-shadow: 5px 5px #f198a5;
+    text-align: center;
+}
+
+.welcome p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 800;
+    color: #f198a5;
+    margin-top: -30px;
+}
+.content1 h1::after{
+    content: '';
+    background: linear-gradient(to right, #f198a5, #5b1409, #f198a5);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.content h1::after{
+    content: '';
+    background: linear-gradient(to right, #f198a5, #5b1409, #f198a5);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -668px;
+
+}
+.content2 h1::after{
+    content: '';
+    background: linear-gradient(to right, #5b1409, #f198a5, #5b1409);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1358px;
+}
+.content3 h1::after{
+    content: '';
+    background: linear-gradient(to right, #5b1409, #f198a5, #5b1409);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2040px;
+}
+.content4 h1::after{
+    content: '';
+    background: linear-gradient(to right, #f198a5, #5b1409, #f198a5);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2682px;
+
+}
+.content5 h1::after{
+    content: '';
+    background: linear-gradient(to right, #f198a5, #5b1409, #f198a5);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -3312px;
+
+}
+.content6 h1::after{
+    content: '';
+    background: linear-gradient(to right, #5b1409, #f198a5, #5b1409);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -3940px;
+}
+/* Slide 1 */
+.slides {
+    width: 100%;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.achievement {
+    height: 100%;
+    background-size: cover;
+}
+
+/*/-------------------------------------------------------------CAKES SECTION-------------------------------------------------------------/*/
+.container {
+    padding: 0; 
+    background-color: #f198a5;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+}
+
+
+#about {
+    padding: 20px 0; 
+    color: #f198a5;
+    background-color: #f198a5;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+/*--------------------------------------------------------------CAKES HEADING*/
+.about .menu{
+    font-size: 150px; 
+    position: absolute;
+}
+.menu h1{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px white;
+}
+
+.menu p{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px white;
+    margin-top: -30px;
+}
+
+/*------------------------------------------------------------CAKES MENU*/
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel :where(.card, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel .card {
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+.card .img {
+    background: pink;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 15px 0 5px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.card span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+/*------------------------------------------------------NEXT AND BACK BUTTON CAKE*/
+#backBtn, #nextBtn{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(20%) saturate(5836%) hue-rotate(345deg) brightness(89%) contrast(103%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*---------------------------------------------------------BUTTONS CAKE PAGE*/
+.card .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn{
+    border: 1px solid #f198a5;
+    padding: 10px 30px;
+    color: #f198a5;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn:hover{
+    background-color: #f198a5;
+    color: #fff;
+}
+
+
+
+/*-------------------------------------------------------------CUPCAKES PAGE---------------------------------------------------------------*/
+.cupcake .list{
+    font-size: 150px; 
+    position: absolute;
+}
+.list h1{
+    position: relative;
+    text-align: center;
+    color: #fef8fb;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px #5b1409;
+}
+
+.list p{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    margin-top: -20px;
+}
+
+.wrapper1 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper1 .carousel1 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel1::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel1 :where(.card1, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel1 .card1 {
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card1 .img {
+    background: #9B5B52;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    
+}
+
+.card1 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card1 h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card1 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+#backBtn1, #nextBtn1{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(103%) contrast(102%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper1 .carousel1 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper1 .carousel1 {
+        grid-auto-columns: 100%;
+    }
+}
+
+.container1 {
+    padding: 0; 
+    background-color: #9B5B52;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+
+#cupcake {
+    padding: 20px 0; 
+    color: #9B5B52;
+    background-color: #9B5B52;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+/*---------------------------------------------------------BUTTONS CUPCAKE PAGE*/
+.card1 .button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn1{
+    border: 1px solid #5b1409;
+    padding: 10px 30px;
+    color: #5b1409;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn1:hover{
+    background-color: #5b1409;
+    color: #fff;
+}
+
+
+
+/*----------------------------------------------------------COOKIES PAGE-------------------------------------------------------------------*/
+.cookies .list1{
+    font-size: 150px; 
+    position: absolute;
+}
+.list1 h1{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px pink;
+}
+
+.list1 p{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px pink;
+    margin-top: -30px;
+}
+
+.wrapper2 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper2 .carousel2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel2::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel2 :where(.card2, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel2 .card2 {
+    list-style: none;
+    background: #f198a5;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card2 .img {
+    background: pink;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    
+}
+
+.card2 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card2 h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card2 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+#backBtn2, #nextBtn2{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(20%) saturate(5836%) hue-rotate(345deg) brightness(89%) contrast(103%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper2 .carousel2 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper2 .carousel2 {
+        grid-auto-columns: 100%;
+    }
+}
+
+.container2 {
+    padding: 0; 
+    background-color: #fef8fb;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+
+#cookies{
+    padding: 20px 0; 
+    color: #fef8fb;
+    background-color: #fef8fb;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+/*------------------------------------------------------------BUTTONS COOKIES PAGE*/
+.card2 .button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn2{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn2:hover{
+    background-color: #fff;
+    color: #5b1409;
+}
+
+/*-----------------------------------------------------------BROWNIES PAGE----------------------------------------------------------------*/
+#brownies{
+    padding: 20px 0; 
+    color: #f7ccd1;
+    background-color: #f7ccd1;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+.container3 {
+    padding: 0; 
+    background-color: #f7ccd1;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+.brownies .list2{
+    font-size: 150px; 
+    position: absolute;
+}
+
+/*----------------------------------------------------------BROWNIES HEADER*/
+.list2 h1{
+    position: relative;
+    color: #5b1409;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px white;
+    text-align: center;
+}
+
+.list2 p{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px white;
+    margin-top: -30px;
+}
+
+/*---------------------------------------------------------------BROWNIES MENU*/
+.wrapper3 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper3 .carousel3 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel3::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel3 :where(.card3, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel3 .card3 {
+    list-style: none;
+    background: #9B5B52;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card3 .img {
+    background: #9B5B52;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    
+}
+
+.card3 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card3 h3 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card3 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+/* --------------------------------------------------BROWNIES NEXT AND BACK BUTTONS*/
+#backBtn3, #nextBtn3{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(10%) saturate(3112%) hue-rotate(319deg) brightness(86%) contrast(67%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper3 .carousel3 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper3 .carousel3 {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*-------------------------------------------------------BUTTONS BROWNIES PAGE*/
+.card3 .button3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn3{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn3:hover{
+    background-color: #fff;
+    color: #5b1409;
+}
+
+/*-----------------------------------------------------------PAVLOVA PAGE----------------------------------------------------------------*/
+#pavlova{
+    padding: 20px 0; 
+    color: #f18793;
+    background-color: #f18793;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+.container4 {
+    padding: 0; 
+    background-color: #f18793;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+.pavlova .list3{
+    font-size: 150px; 
+    position: absolute;
+}
+
+/*----------------------------------------------------------PAVLOVA HEADER*/
+.list3 h1{
+    position: relative;
+    color: #5b1409;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px white;
+    text-align: center;
+}
+
+.list3 p{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px white;
+    margin-top: -30px;
+}
+
+/*---------------------------------------------------------------PAVLOVA MENU*/
+.wrapper4 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper4 .carousel4 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel4::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel4 :where(.card4, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel4 .card4 {
+    height: 380px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card4 .img {
+    background: #f18793;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    
+}
+
+.card4 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card4 h3 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card4 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+/* --------------------------------------------------PAVLOVA NEXT AND BACK BUTTONS*/
+#backBtn4, #nextBtn4{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(103%) contrast(102%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper4 .carousel4 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper4 .carousel4 {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*-------------------------------------------------------BUTTONS PAVLOVA PAGE*/
+.card4 .button4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn4{
+    border: 1px solid #f18793;
+    padding: 10px 30px;
+    color: #f18793;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn4:hover{
+    background-color: #f18793;
+    color: #fff;
+}
+
+/*-----------------------------------------------------------CUSTOM PAGE----------------------------------------------------------------*/
+#custom{
+    padding: 20px 0; 
+    color: #fff;
+    background-color: #fff;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+.container5 {
+    padding: 0; 
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+.custom .list4{
+    font-size: 150px; 
+    position: absolute;
+}
+
+/*----------------------------------------------------------CUSTOM HEADER*/
+.list4 h1{
+    position: relative;
+    color: #5b1409;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px pink;
+    text-align: center;
+}
+
+.list4 p{
+    position: relative;
+    text-align: center;
+    color: #5b1409;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px pink;
+    margin-top: -30px;
+}
+
+/*---------------------------------------------------------------CUSTOM MENU*/
+.wrapper5 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper5 .carousel5 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel5::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel5 :where(.card5, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel5 .card5 {
+    height: 380px;
+    list-style: none;
+    background: #f198a5;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.card5 .img {
+    background: pink;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    
+}
+
+.card5 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card5 h3 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card5 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+/* --------------------------------------------------CUSTOM NEXT AND BACK BUTTONS*/
+#backBtn5, #nextBtn5{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(42%) saturate(335%) hue-rotate(302deg) brightness(94%) contrast(101%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper5 .carousel5 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper5 .carousel5 {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*-------------------------------------------------------BUTTONS CUSTOM PAGE*/
+.card5 .button5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn5{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn5:hover{
+    background-color: #fff;
+    color: #5b1409;
+}
+
+/*-----------------------------------------------------------REVIEW PAGE----------------------------------------------------------------*/
+#review{
+    padding: 100px 0; 
+    color: #9B5B52;
+    background-color: #9B5B52;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+.container6 {
+    padding: 0; 
+    background-color: #9B5B52;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 20px;
+
+}
+
+.review .list5{
+    font-size: 150px; 
+    position: absolute;
+}
+
+/*----------------------------------------------------------REVIEW HEADER*/
+.list5 h1{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 100px; 
+    font-family: "Shrikhand";
+    text-shadow: 5px 5px #5b1409;
+}
+
+.list5 p{
+    position: relative;
+    color: #fff;
+    font-size: 25px; 
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px 0 15px;
+    text-shadow: 1px 1px #5b1409;
+    text-align: center;
+    margin-top: -30px;
+}
+
+/*---------------------------------------------------------------REVIEW MENU*/
+.wrapper6 {
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.wrapper6 .carousel6 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    flex: none;
+}
+
+
+.carousel6::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel6 :where(.card6, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel6 .card6 {
+    height: 380px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.card6 .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    
+}
+
+.card6 h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 30px 0 5px;
+    color: #f18793;
+    font-family: "Shrikhand";
+    text-shadow: 2px 2px #f7ccd1;
+    left: 50%;
+}
+
+.card6 span {
+    color: black;
+    font-size: 1.31rem;
+    text-align: center;
+}
+
+.gallery-wrap6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10& auto;
+}
+
+/* --------------------------------------------------REVIEWNEXT AND BACK BUTTONS*/
+#backBtn6, #nextBtn6{
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(103%) contrast(102%);
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper6 .carousel6 {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper6 .carousel6 {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*-------------------------------------------------------BUTTONS REVIEW PAGE*/
+.card6 .button6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0px;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn6{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 50px;
+}
+
+.btn6:hover{
+    background-color: #fff;
+    color: #5b1409;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer p{
+    font-size: 10px;
+    color: #fff;
+}

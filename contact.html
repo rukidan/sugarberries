@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us ˖ ִֶཐི༏ཋྀ</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <header class="header">
+            <video autoplay loop muted plays-inline class="back-video">
+        <source src="background.mp4" type="video/mp4">
+        </video>
+        <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.webp" class="logo" alt="Sugar & Berries Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        </section>
+    </header>
+
+    <section class="contact-section-1">
+        <div class="contact-left">
+            <h1>Our Contacts</h1>
+            <h3><span class="autot"></span></h3>
+            <div class="social-media-icons">
+                <a href="https://instagram.com/sugarandberries?igshid=1v8l50arwu8uq" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/sugarandberries/" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.threads.net/@sugarandberries" target="_blank" aria-label="Threads">
+                    <i class="fa-brands fa-threads"></i>
+                </a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Faf7mmy&e=AT1cDNJ0VG8b0w21Mg3dC-FQMGVDKIqM5Yz19OCwseMilyJ3jY-GGyvBnfDewfW7lRqanrD6BvePeT0759x6_4-5Tsxzl9PrWsPjkSjD_3pPOSSW4p-Xjw" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="contact-form">
+                <h4>Send us a message</h4>
+                <p>If you have any queries, feel free to send us a message!</p>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your e-mail" required> 
+                    <textarea name="Message" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Now</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </section>
+        <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4TlPPxJcIxmZDeNd_rvE7sTYaZ7QJg31StG8LnWR6wC-R84p4jqN7RwGawRiWtAGR/exec'
+    const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+            
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+            
+        </script>
+    <footer class="footer">
+        <h4>All Rights Reserved, 2024</h4>
+        <p>Made with ♡ by Sugar&Berries</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof Typed !== "undefined") {
+                new Typed(".autot", {
+                    strings: ["FEEL FREE TO CONTACT US! ⋆"],
+                    typeSpeed: 55
+                });
+            } else {
+                document.querySelector(".autot").textContent = "FEEL FREE TO CONTACT US!⋆";
+            }
+        });
+    </script>
+</body>
+</html>

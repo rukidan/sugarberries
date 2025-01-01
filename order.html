@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now ˖ ִֶཐི༏ཋྀ</title>
+    <link rel="stylesheet" href="orderstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        /* Updated styles */
+        nav .nav-links ul li a {
+            text-transform: uppercase;
+        }
+
+        .contact-section-1 .social-media-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contact-section-1 .social-media-icons i {
+            font-size: 28px;
+            color: #5b1409;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section-1 .social-media-icons i:hover {
+            color: #f198a5;
+        }
+
+        .footer {
+            background-color: #f198a5; 
+            color: #5b1409;
+        }
+
+        .footer h4,
+        .footer p {
+            color: #5b1409;
+        }
+
+        .contact-form h4 {
+            font-family: 'Shrikhand';
+            font-size: 50px; 
+            text-shadow: 2px 2px 5px #f198a5; 
+        }
+
+        .contact-form p, 
+        .contact-form input, 
+        .contact-form textarea, 
+        .contact-form button {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        
+        .contact-form .animated-text {
+            font-size: 18px;
+            color: #5b1409;
+            font-family: 'Poppins', sans-serif;
+        }
+
+      
+        .contact-form .animated-text span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #f198a5;
+        }
+
+        
+        .autot {
+            font-size: 20px;
+            color: #5b1409;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+    <header class="header">
+        <video autoplay loop muted plays-inline class="back-video">
+        <source src="background.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <a href="index.html"><img src="logo.webp" class="logo" alt="Sugar & Berries Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div class="content">
+            <h1>Order Now</h1>
+            <p><span class="auto-type"></span></p>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+        var typed = new Typed(".auto-type", { strings: ["EVERY BITE TELLS A STORY, PLACE YOUR ORDER AND TASTE THE DIFFERENCE! ⋆"], typeSpeed: 60 })
+    </script>
+    <div class="content1">
+    <h1></h1>
+    </div>
+</div>
+    
+    <section class="contact-section-2">
+        <div class="contact-container">
+            
+            <div class="contact-form">
+                <h4>Order Form</h4>
+                <p class="animated-text"><span>If you're ready to place an order, fill out the form below:</span></p>
+                <form name="submit-to-google-sheet" action="#" id="order-form">
+                    <div class="user-details">
+                        
+                <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="Name" placeholder="Enter your name" required>
+                </div>
+
+                        
+                <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="Phone" placeholder="Enter your phone number" required pattern="^\d{10,11}$" title="Phone number must be 10 or 11 digits long">
+                </div>
+
+                       
+                <div class="input-box">
+                <span class="details">Pick-up date</span>
+                <input type="date" name="Date" placeholder="Select pick-up date" required>
+                </div>
+                </div>
+
+                 
+                <div class="user-details">
+                        
+                <div class="input-box">
+                <span class="details" >Pastry Order</span>
+                <select id="pastry-select" required input type="pastry-select" name="Pastry Order" placeholder="Select your pastry" required>
+                <option value="">Select your pastry</option>
+                <option value="Cakes">Cakes</option>
+                <option value="Cupcakes">Cupcakes</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Brownies">Brownies</option>
+                <option value="Pavlova">Pavlova</option>
+                </select>
+                </div>
+
+                      
+                <div class="input-box" id="pastry-variant">
+                <span class="details">Pastry Variant</span>
+                <select id="variant-select" required input type="pastry-select" name="Pastry Variant" placeholder="Select flavor" required>
+                <option value="">Select flavor</option>
+                </select>
+                </div>
+
+                       
+                <div class="input-box">
+                <span class="details">Quantity</span>
+                <input type="number" name="Quantity" id="quantity" placeholder="Enter quantity" required>
+                </div>
+                </div>
+
+                   
+                <div class="input-box special-requests">
+                <span class="details">Special Requests (Custom Orders)</span>
+                <textarea name="Special Requests" placeholder="Any special requests or instructions" rows="6"></textarea>
+                </div>
+
+                   
+                <div class="input-box">
+                <span class="details">Total Price (RM)</span>
+                <input type="text" name="Price" placeholder="Total Price (RM)" id="total-price" disabled>
+                </div>
+
+                   
+                <div class="button">
+                <input type="submit" value="Place Order">
+                </div>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const pastrySelect = document.getElementById('pastry-select');
+        const variantSelect = document.getElementById('variant-select');
+        const quantityInput = document.getElementById('quantity');
+        const totalPriceInput = document.getElementById('total-price');
+
+        const prices = {
+            Cakes: {
+                "biscoff-cheesecake": 120,
+                "pandan-gula-apong": 50,
+                "victoria-sandwich-cake": 80,
+                "carrot-cake": 70,
+                "classic-red-velvet": 150,
+            },
+            Cupcakes: {
+                "pandan-cupcakes": 2,
+                "biscoff-creamy-cupcakes": 4,
+                "red-velvet-cupcakes": 2,
+                "strawberry-cupcakes": 6,
+                "pandan-gula-apong": 6,
+            },
+            Cookies: {
+                "matcha-cookies": 0.60,
+                "mix-soft-cookie-set": 30,
+                "milky-oreo": 0.73,
+                "cranberry-cookies": 0.58,
+                "german-cookies": 0.54,
+            },
+            Brownies: {
+                "chocolate-brownies-box": 50,
+                "brownies-mix-box": 35,
+            },
+            Pavlova: {
+                "mini-pavlovas": 80,
+                "strawberry-pavlova-cake": 80,
+                "berries-pavlova": 80,
+                "heart-pavlova": 80,
+            },
+        };
+
+        function updateVariants() {
+            const selectedPastry = pastrySelect.value;
+            variantSelect.innerHTML = '<option value="">Select flavor</option>';
+
+            if (prices[selectedPastry]) {
+                Object.keys(prices[selectedPastry]).forEach(function (variant) {
+                    const option = document.createElement('option');
+                    option.value = variant;
+                    option.textContent = variant.replace(/-/g, ' ').toUpperCase();
+                    variantSelect.appendChild(option);
+                });
+            }
+        }
+
+        function calculatePrice() {
+            const selectedPastry = pastrySelect.value;
+            const selectedVariant = variantSelect.value;
+            const quantity = parseInt(quantityInput.value, 10);
+
+            if (prices[selectedPastry] && prices[selectedPastry][selectedVariant] && quantity) {
+                const price = prices[selectedPastry][selectedVariant] * quantity;
+                totalPriceInput.value = price.toFixed(2);
+            }
+        }
+
+        pastrySelect.addEventListener('change', function () {
+            updateVariants();
+            calculatePrice();
+        });
+
+        variantSelect.addEventListener('change', calculatePrice);
+        quantityInput.addEventListener('input', calculatePrice);
+    </script>
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyulzjyfckHIcFJmJUOqLyl8Pmt2ev5jNTb52MncKh1x3MVeUtvA2cGwd12eqyOqS-3Tg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Your order has been succesfully placed!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+            
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+    <footer class="footer">
+        <h4>All Rights Reserved, 2024</h4>
+        <p>Made with ♡ by Sugar&Berries</p>
+    </footer>
+</body>
+</html>

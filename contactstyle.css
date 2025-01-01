@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Shrikhand', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+ 
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+     width: 100%;
+     height: auto;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+nav .logo {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #f198a5;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f198a5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.contact-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0 40px;
+    min-height: calc(100vh - 140px); 
+    gap: 30px;
+    flex: 1;
+}
+br {
+    display: block; 
+    content: ""; 
+    margin-top: -45px;
+}
+.contact-left {
+    flex: 1;
+    text-align: left;
+    padding-left: 170px;
+}
+
+.contact-left h1 {
+    font-family: 'Shrikhand';
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #5b1409;
+    text-shadow: 3px 3px #f198a5;
+}
+.contact-left h3{
+    margin-top: -50px;
+}
+.contact-left .autot {
+    font-size: 23px;
+    font-weight: 500;
+    color: #f198a5;
+    margin-bottom: 30px;
+}
+
+.contact-left .social-media-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-left .social-media-icons i {
+    font-size: 28px;
+    color: #5b1409;
+    transition: color 0.3s ease;
+}
+
+.contact-left .social-media-icons i:hover {
+    color: #f198a5;
+}
+
+.contact-right {
+    flex: 1;
+    padding-left: 120px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #f198a5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.contact-form h4 {
+    font-family: 'Shrikhand';
+    font-size: 20px;
+    color: #5b1409;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #5b1409;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #f198a5;
+    color: #5b1409;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: -80px;
+}
+
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #f198a5;
+}
+.footer p{
+    font-size: 10px;
+    color: #f198a5;
+}
+#msg{
+    color: #5b1409;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
